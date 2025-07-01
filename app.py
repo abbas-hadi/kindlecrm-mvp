@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import openai
+from openai import OpenAI
 
 # Load OpenAI API key securely from Streamlit secrets
 openai.api_key = st.secrets["openai"]["api_key"]
